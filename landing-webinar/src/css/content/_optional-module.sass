@@ -1,0 +1,48 @@
+#optional-module
+  background-color: map-get($colors, satin_linen)
+
+  .container
+    display: flex
+    align-items: center
+    position: relative
+    z-index: 2
+
+    .image
+      width: 19.5vw
+      max-width: 374px
+      padding: 9.5vh 0
+      margin-right: 4.9vw
+      position: relative
+
+      &:before
+        content: ''
+        width: 50vw
+        height: 100%
+        background-color: map-get($colors, cerulean)
+        display: block
+        position: absolute
+        top: 0
+        right: 38%
+        transform: skew(-30deg)
+        pointer-events: none
+        z-index: 1
+
+      > img
+        +round
+        position: relative
+        z-index: 10
+        
+
+    .info
+      width: 55.2vw
+      max-width: 1080px  
+
+      h2
+        color: map-get($colors, cerulean)
+
+      p
+        line-height: 1.4
+        color: map-get($colors, masala)
+
+  // .container
+// #optional-module

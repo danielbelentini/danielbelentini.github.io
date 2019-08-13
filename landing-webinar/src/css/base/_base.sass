@@ -1,0 +1,38 @@
+// ==========================================================================
+// Base
+// ==========================================================================
+
+// Cores
+// ==========================================================================
+$colors: ( cerulean: #0c9abe, blizzard_blue: #a3dcea, granite_green: #908e7f, masala: #494440, gray_olive: #aaa792, dune: #37322f, satin_linen: #ebe9e0, westar: #dad8cc, pampas: #f5f4ef )
+
+// Fonte
+// ==========================================================================
+=lato-font
+  font-family: 'Lato', sans-serif
+  font-weight: normal
+
+// geral
+// ==========================================================================
+=round
+  border-radius: 100%
+
+=shadow
+  box-shadow: 1px 5px 17px -6px rgba(0 , 0, 0, .3);
+
+
+
+// Mixins
+// ==========================================================================
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content

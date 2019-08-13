@@ -1,0 +1,82 @@
+#topics
+  .title-wrapper
+    width: 100%
+    background: transparent url('../../img/layout/bg-header-topics.jpg') center top /cover no-repeat
+    padding: 14.94vh 0 7.6vh
+
+  .topics-list
+    background-color: map-get($colors, westar)
+    position: relative
+
+    .container
+      padding: 4.24vh 20px
+      position: relative
+      
+      &:before, 
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        z-index: 1
+
+      &:before
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 33.15vh 7.6vw 0 0px;
+        border-color: map-get($colors, pampas) transparent transparent transparent;
+        top: 0
+        left: 0
+        transform: translateX(-100%)
+
+      &:after
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 33.15vh 7.6vw 0 0px;
+        border-color: map-get($colors, pampas) transparent transparent transparent;
+        bottom: 0
+        right: 0
+        transform: translateX(100%) rotate(180deg)
+
+      > ul
+        width: 100%
+        position: relative
+        z-index: 2
+        display: flex
+        justify-content: space-between
+
+        li 
+          +shadow
+
+          width: calc(33.33% - 3.125vw)
+          background-color: map-get($colors, pampas)
+          border-radius: 10px
+          padding: 5.82vh 2.19vw
+          
+
+          .top
+
+            .date
+              width: 100%
+              margin-bottom: 20px
+              display: flex
+              flex-direction: column
+              align-items: center
+              text-align: center
+              line-height: 1.4
+              color: map-get($colors, granite_green)
+              text-transform: uppercase
+              font-weight: 900
+
+              .highlight
+                font-size: 1.2rem
+                text-align: center
+
+          
+
+        // li
+      // > ul
+    // .container
+  // .topics-list
+// #topics
