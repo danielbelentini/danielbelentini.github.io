@@ -20,24 +20,24 @@
         z-index: 1
 
       &:before
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 33.15vh 7.6vw 0 0px;
-        border-color: map-get($colors, pampas) transparent transparent transparent;
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 33.15vh 7.6vw 0 0px
+        border-color: map-get($colors, pampas) transparent transparent transparent
         top: 0
         left: 0
-        transform: translateX(-100%)
+        transform: translateX(-91%)
 
       &:after
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 33.15vh 7.6vw 0 0px;
-        border-color: map-get($colors, pampas) transparent transparent transparent;
-        bottom: 0
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 33.15vh 7.6vw 0 0px
+        border-color: map-get($colors, pampas) transparent transparent transparent
+        bottom: -1px
         right: 0
-        transform: translateX(100%) rotate(180deg)
+        transform: translateX(92%) rotate(180deg)
 
       > ul
         width: 100%
@@ -54,8 +54,8 @@
           border-radius: 10px
           padding: 5.82vh 2.19vw
           
-
           .top
+            text-align: center
 
             .date
               width: 100%
@@ -72,9 +72,80 @@
               .highlight
                 font-size: 1.2rem
                 text-align: center
+            // .date
 
-          
+            .title
+              width: 100%
+              height: 21.72vh
+              display: flex
+              align-items: center
+              text-align: center
 
+              > span
+                color: map-get($colors, masala)
+                font-weight: 900
+                line-height: 1.2
+                font-size: 1.2667rem
+            // .title
+
+            .to-top
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 14.1vw
+              height: 8.05vh
+              border: 1px solid map-get($colors, cerulean)
+              margin: 20px auto 40px
+              background-color: map-get($colors, cerulean)
+              color: #fff
+              text-transform: uppercase
+              font-weight: 900
+              border-radius: 4.025vh
+              transition: all .3s ease
+
+              &:hover
+                background-color: #fff
+                color: map-get($colors, cerulean)
+            // .to-top
+          // .top
+
+          .about
+            width: 100%
+            padding: 3.7vh 0
+            border-top: 8px solid map-get($colors, moon_mist)
+            border-bottom: 8px solid map-get($colors, moon_mist)
+            margin-bottom: 4.24vh
+
+            > dl 
+              text-align: center
+              font-size: .8667rem
+              line-height: 1.4
+
+              dt
+                color: map-get($colors, cerulean)
+                text-transform: uppercase
+                margin-bottom: 10px
+                font-weight: 900
+
+              dd
+                color: map-get($colors, dune)
+          // .about
+
+          .speaker-data
+            width: 100%
+            text-align: center
+            font-size: 0.833rem
+
+            > dl
+              dt
+                color: map-get($colors, cerulean)
+                text-transform: uppercase
+                margin-bottom: 10px
+                font-weight: 900
+
+              dd
+                color: map-get($colors, dune)
+          // .speaker-data
         // li
       // > ul
     // .container

@@ -1,0 +1,48 @@
+#speakers-profile
+  width: 100%
+  background: transparent url('../../img/layout/bg-speakers.jpg') center top /contain no-repeat
+  padding: 14.94vh 0 7.6vh
+
+  .container
+    padding-bottom: 13.24vh
+
+    h2
+      margin-bottom: 5.3vh
+
+    .speakers-list
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        li 
+          width: calc(25% - 4.95vw)
+
+          img
+            +round
+            margin-bottom: 4.24vh
+
+          .info
+            width: 100%
+            text-align: center
+            font-size: .83rem
+
+            > dl
+              margin-bottom: 10px
+
+              dt
+                color: map-get($colors, cerulean)
+                text-transform: uppercase
+                font-weight: 900
+                line-height: 1.2
+
+              dd
+                color: map-get($colors, masala)
+                font-weight: 900
+
+            p
+              font-size: .867rem
+              color: map-get($colors, masala)
+              line-height: 1.4
+    // .speakers-list        
+  // .container
+// #speakers-profile

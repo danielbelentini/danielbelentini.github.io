@@ -1,0 +1,74 @@
+#cta
+  width: 100%
+  height: 33.9vh
+  background-color: map-get($colors, cerulean)
+
+  .container
+    width: 100%
+    display: flex
+    align-items: center
+    position: relative
+    height: 100%
+    
+    &:before, 
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      z-index: 1
+
+    &:before
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 33.9vh 7.7vw 0 0px
+      border-color: map-get($colors, moon_mist) transparent transparent transparent
+      top: 0
+      left: 0
+      transform: translateX(-91%)
+
+    &:after
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 33.9vh 7.7vw 0 0px
+      border-color: map-get($colors, moon_mist) transparent transparent transparent
+      bottom: 0
+      right: 0
+      transform: translateX(90%) rotate(180deg)
+
+    .content
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+      h2
+        color: #fff
+
+      .to-top
+        +shadow
+
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 14.1vw
+        height: 8.05vh
+        border: 1px solid #fff
+        margin: 20px auto 0
+        background-color: #fff
+        color: map-get($colors, cerulean)
+        text-transform: uppercase
+        font-weight: 900
+        border-radius: 4.025vh
+        transition: all .3s ease
+
+        &:hover
+          background-color: map-get($colors, cerulean)
+          color: #fff
+      // .to-top
+
+    // .content
+  // .container  
+// #cta
