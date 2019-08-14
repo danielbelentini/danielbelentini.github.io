@@ -3,12 +3,13 @@
   height: 33.9vh
   background-color: map-get($colors, cerulean)
   overflow: hidden
+  position: relative
 
   .container
     width: 100%
     display: flex
     align-items: center
-    position: relative
+    position: static
     height: 100%
     
     &:before, 
@@ -26,7 +27,7 @@
       border-color: map-get($colors, moon_mist) transparent transparent transparent
       top: 0
       left: 0
-      transform: translateX(-91%)
+      transform: translateX(calc(-100% + 7.6vw))
 
     &:after
       width: 0
@@ -36,7 +37,7 @@
       border-color: map-get($colors, moon_mist) transparent transparent transparent
       bottom: 0
       right: 0
-      transform: translateX(90%) rotate(180deg)
+      transform: translateX(calc(100% - 7.6vw)) rotate(180deg)
 
     .content
       width: 100%
@@ -72,9 +73,6 @@
     // .content
   // .container  
 // #cta
-
-
-
 
 
 @media (max-width: 1023px)

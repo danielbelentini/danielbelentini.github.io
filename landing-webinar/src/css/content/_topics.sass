@@ -5,13 +5,13 @@
     padding: 14.94vh 0 7.6vh
 
   .topics-list
-    background-color: map-get($colors, westar)
     position: relative
+    background-color: map-get($colors, westar)
     overflow: hidden
 
     .container
       padding: 4.24vh 20px
-      position: relative
+      position: static
       
       &:before, 
       &:after
@@ -28,7 +28,7 @@
         border-color: map-get($colors, pampas) transparent transparent transparent
         top: 0
         left: 0
-        transform: translateX(-91%)
+        transform: translateX(calc(-100% + 7.5vw)) 
 
       &:after
         width: 0
@@ -38,7 +38,7 @@
         border-color: map-get($colors, pampas) transparent transparent transparent
         bottom: -1px
         right: 0
-        transform: translateX(92%) rotate(180deg)
+        transform: translateX(calc(100% - 7.5vw)) rotate(180deg)
 
       > ul
         width: 100%
