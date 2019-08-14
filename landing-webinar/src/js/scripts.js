@@ -15,7 +15,6 @@ $(function() {
         }, // init
 
         toTop: function() {
-          console.log('script ok')
           var $toTop = $('.to-top')
           w.on('scroll', function (e) {
             e.preventDefault()

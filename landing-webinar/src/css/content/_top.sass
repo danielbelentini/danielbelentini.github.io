@@ -315,7 +315,11 @@
       // .form
     // .content
   // .container
-// #top      
+// #top
+
+
+
+
 
 @media (max-width: 1366px)
   #top
@@ -369,3 +373,194 @@
     // .container
   // #top
 // media (max-width: 1366px)
+
+
+
+
+@media (max-width: 1023px)
+  #top
+    background: map-get($colors, cerulean) url('../../img/content/img-hero-mob.jpg') center top /100% no-repeat
+
+    .container
+      padding-top: 8.8vh
+
+      .totvs-logo
+        position: static
+      
+      .content
+        justify-content: flex-start
+        padding-bottom: 16.7vh
+
+        .info
+          width: 100%
+          max-width: 100%
+          margin-top: 12.3vh
+          
+          > ul 
+            margin: 3vh 0
+
+            li
+              &:before
+                background-size: 100%
+
+              &.webinars
+                &:before
+                  width: 36px
+                  height: 47px
+              
+              &.calendar
+                &:before
+                  width: 44px
+                  height: 42px
+          // > ul
+
+          .assign-now
+            &:after
+              display: none;
+          // .assign-now
+        // .info
+        
+        .form
+          width: 100%
+          max-width: 100%
+          
+          .embed-frm
+            margin-top: 3.7vh
+            
+            .hs-form
+              fieldset
+                max-width: 100%
+
+                &.form-columns-2
+                  .hs-form-field
+                    width: 100% !important
+
+                    &:first-child
+                      margin-right: 15px
+                // .form-columns-2
+
+              .actions
+                .hs-button
+                  -webkit-box-shadow: none
+                  -moz-box-shadow: none
+                  box-shadow: none
+
+                  width: 30.47vw
+                  min-width: 234px
+                  height: 53px
+                  background-color: map-get($colors, cerulean)
+                  color: #fff
+
+                  &:hover
+                    background-color: map-get($colors, cerulean)
+                    color: #fff
+
+              // .hs-input      
+            // .hs-form
+          // .embed-form
+        // .form
+      // .content
+    // .container
+  // #top
+// media (max-width: 1023px)
+
+
+
+
+@media (max-width: 767px)
+  #top
+    .container
+      padding-top: 30px
+      
+      .totvs-logo
+        margin: 0 auto
+        position: static
+      
+      .content
+        justify-content: flex-start
+        padding-bottom: 16.7vh
+
+        .info
+          margin-top: 30px
+
+          > p 
+            font-size: 13px
+            line-height: 1.1
+          
+          > ul 
+            margin: 2vh 0 4vh
+            
+            li
+              &:before
+                background-size: 100%
+                margin-right: 10px
+
+              &.webinars
+                margin-right: 20px
+
+                &:before
+                  width: 26px
+                  height: 37px
+
+              
+              &.calendar
+                &:before
+                  width: 34px
+                  height: 32px
+          // > ul
+
+          .assign-now
+            font-size: 12.5px
+            
+            &:after
+              display: none;
+          // .assign-now
+        // .info
+        
+        .form
+          width: 100%
+          max-width: 100%
+          padding-top: 20px
+
+          > h2
+            margin-top: 0
+          
+          > p
+            text-align: center
+            color: map-get($colors, dune)
+            font-size: 13px
+
+            small
+              font-size: 12px
+
+          .embed-frm
+            margin-top: 3.7vh
+            
+            .hs-form
+              .hs-form-required
+                font-size: 13px
+
+              .actions
+                .hs-button
+                  -webkit-box-shadow: none
+                  -moz-box-shadow: none
+                  box-shadow: none
+
+                  width: 30.47vw
+                  min-width: 234px
+                  height: 53px
+                  background-color: map-get($colors, cerulean)
+                  color: #fff
+
+                  &:hover
+                    background-color: map-get($colors, cerulean)
+                    color: #fff
+
+              // .hs-input      
+            // .hs-form
+          // .embed-form
+        // .form
+      // .content
+    // .container
+  // #top
+// media (max-width: 767px)

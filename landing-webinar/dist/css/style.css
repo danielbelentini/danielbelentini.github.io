@@ -41,6 +41,12 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .totvs-logo {
+    width: 24.71vw;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -204,6 +210,32 @@ h2 {
   }
   .container {
     max-width: 1170px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 12.62vw;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  html,
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.1rem;
   }
 }
 
@@ -610,6 +642,155 @@ h2 {
   #top .container .content .form .embed-frm .hs-form fieldset input:not([type="radio"]),
   #top .container .content .form .embed-frm .hs-form fieldset select {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1023px) {
+  #top {
+    background: #0c9abe url("../../img/content/img-hero-mob.jpg") center top/100% no-repeat;
+  }
+  #top .container {
+    padding-top: 8.8vh;
+  }
+  #top .container .totvs-logo {
+    position: static;
+  }
+  #top .container .content {
+    justify-content: flex-start;
+    padding-bottom: 16.7vh;
+  }
+  #top .container .content .info {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12.3vh;
+  }
+  #top .container .content .info > ul {
+    margin: 3vh 0;
+  }
+  #top .container .content .info > ul li:before {
+    background-size: 100%;
+  }
+  #top .container .content .info > ul li.webinars:before {
+    width: 36px;
+    height: 47px;
+  }
+  #top .container .content .info > ul li.calendar:before {
+    width: 44px;
+    height: 42px;
+  }
+  #top .container .content .info .assign-now:after {
+    display: none;
+  }
+  #top .container .content .form {
+    width: 100%;
+    max-width: 100%;
+  }
+  #top .container .content .form .embed-frm {
+    margin-top: 3.7vh;
+  }
+  #top .container .content .form .embed-frm .hs-form fieldset {
+    max-width: 100%;
+  }
+  #top .container .content .form .embed-frm .hs-form fieldset.form-columns-2 .hs-form-field {
+    width: 100% !important;
+  }
+  #top .container .content .form .embed-frm .hs-form fieldset.form-columns-2 .hs-form-field:first-child {
+    margin-right: 15px;
+  }
+  #top .container .content .form .embed-frm .hs-form .actions .hs-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 30.47vw;
+    min-width: 234px;
+    height: 53px;
+    background-color: #0c9abe;
+    color: #fff;
+  }
+  #top .container .content .form .embed-frm .hs-form .actions .hs-button:hover {
+    background-color: #0c9abe;
+    color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  #top .container {
+    padding-top: 30px;
+  }
+  #top .container .totvs-logo {
+    margin: 0 auto;
+    position: static;
+  }
+  #top .container .content {
+    justify-content: flex-start;
+    padding-bottom: 16.7vh;
+  }
+  #top .container .content .info {
+    margin-top: 30px;
+  }
+  #top .container .content .info > p {
+    font-size: 13px;
+    line-height: 1.1;
+  }
+  #top .container .content .info > ul {
+    margin: 2vh 0 4vh;
+  }
+  #top .container .content .info > ul li:before {
+    background-size: 100%;
+    margin-right: 10px;
+  }
+  #top .container .content .info > ul li.webinars {
+    margin-right: 20px;
+  }
+  #top .container .content .info > ul li.webinars:before {
+    width: 26px;
+    height: 37px;
+  }
+  #top .container .content .info > ul li.calendar:before {
+    width: 34px;
+    height: 32px;
+  }
+  #top .container .content .info .assign-now {
+    font-size: 12.5px;
+  }
+  #top .container .content .info .assign-now:after {
+    display: none;
+  }
+  #top .container .content .form {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+  #top .container .content .form > h2 {
+    margin-top: 0;
+  }
+  #top .container .content .form > p {
+    text-align: center;
+    color: #37322f;
+    font-size: 13px;
+  }
+  #top .container .content .form > p small {
+    font-size: 12px;
+  }
+  #top .container .content .form .embed-frm {
+    margin-top: 3.7vh;
+  }
+  #top .container .content .form .embed-frm .hs-form .hs-form-required {
+    font-size: 13px;
+  }
+  #top .container .content .form .embed-frm .hs-form .actions .hs-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 30.47vw;
+    min-width: 234px;
+    height: 53px;
+    background-color: #0c9abe;
+    color: #fff;
+  }
+  #top .container .content .form .embed-frm .hs-form .actions .hs-button:hover {
+    background-color: #0c9abe;
+    color: #fff;
   }
 }
 
