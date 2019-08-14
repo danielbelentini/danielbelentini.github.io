@@ -151,3 +151,151 @@
     // .container
   // .topics-list
 // #topics
+
+
+
+
+
+@media (max-width: 1023px)
+  #topics
+    .title-wrapper
+      background: none
+      padding: 14.94vh 0 3.9vh
+
+      h2
+        text-align: center
+
+    .topics-list
+      
+      .container
+        padding: 4.24vh 12.62vw
+        position: relative
+        
+        &:before, 
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          z-index: 1
+
+        &:before
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 21vh 13.15vw 0 0px
+          border-color: map-get($colors, pampas) transparent transparent transparent
+          top: 0
+          left: 0
+          transform: translateX(0)
+
+        &:after
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 21vh 13.15vw 0 0px
+          border-color: map-get($colors, pampas) transparent transparent transparent
+          bottom: -1px
+          right: 0
+          transform: translateX(0) rotate(180deg)
+
+        > ul
+          flex-direction: column
+          justify-content: flex-start
+          align-items: center
+
+          li 
+            width: 100%
+            padding: 4vh 6.9vw
+            margin-bottom: 3.9vh
+
+            &:last-child
+              margin-bottom: 0
+            
+            .top
+              .title
+                height: auto
+              
+              .to-top
+                width: 30.47vw
+                max-width: 234px
+                height: 53px
+                background-color: map-get($colors, cerulean)
+                color: #fff
+
+                &:hover
+                  background-color: map-get($colors, cerulean)
+                  color: #fff
+              // .to-top
+            // .top
+
+            .about
+              padding: 2.93vh 0
+              border-top-width: 5px
+              border-bottom-width: 5px
+            // .about
+          // li
+        // > ul
+      // .container
+    // .topics-list
+  // #topics
+// media (max-width: 1023px)
+
+
+  
+
+  
+@media (max-width: 767px)
+  #topics
+    .title-wrapper
+      background: none map-get($colors, pampas)
+      padding: 7vh 0 3.9vh
+
+      h2
+        text-align: center
+
+    .topics-list
+      .container
+        padding: 4.24vh 15px
+        position: relative
+        
+        &:before, 
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          z-index: 1
+
+        &:before
+          transform: translateX(-30px)
+
+        &:after
+          transform: translateX(36px) rotate(180deg)
+
+        > ul
+          flex-direction: column
+          justify-content: flex-start
+          align-items: center
+
+          li 
+            width: 100%
+            padding: 4vh 6.9vw
+            margin-bottom: 3.9vh
+
+            &:last-child
+              margin-bottom: 0
+            
+            .top
+              .to-top
+                width: 100%
+                
+            .about
+              padding: 2.93vh 0
+              border-top-width: 5px
+              border-bottom-width: 5px
+            // .about
+          // li
+        // > ul
+      // .container
+    // .topics-list
+  // #topics
+// media (max-width: 767px)
