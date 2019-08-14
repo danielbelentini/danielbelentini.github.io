@@ -16,12 +16,14 @@
       flex-wrap: wrap
       justify-content: space-between
       align-items: flex-start
+      padding-bottom: 6.8vh
 
       .info
         width: 41.15vw
         max-width: 790px
         color: #fff
         margin-top: 32.3vh
+        
 
         > p 
           display: block
@@ -81,6 +83,7 @@
             width: 19px
             height: 31px
             background: transparent url('../../img/icons/chevron-right.png') center /100% no-repeat
+            animation: pointing 1s ease infinite backwards
         // .assign-now
       // .info
       
@@ -91,7 +94,7 @@
         color: #fff
         border-radius: 10px
         padding: 3.2vh 2.9vw
-        margin: 13.56vh 0 6.8vh
+        margin: 5.56vh 0 0
 
         > h2
           width: 100%
@@ -156,9 +159,25 @@
               // .hs-form-field
 
               &.form-columns-2
+                
                 .hs-form-field
-                  width: 100%
-              
+                  width: calc(50% - 7.5px) !important
+
+                  &:first-child
+                    margin-right: 15px
+              // .form-columns-2
+
+              &.form-columns-1
+                &[data-reactid=".hbspt-forms-0.1:$10"]
+                  display: none
+
+              .hs-error-msgs
+                li
+                  display: flex
+                  align-items: flex-start
+                  line-height: 1.2
+                  padding-top: 5px
+
               label
                 color: #fff
                 text-transform: uppercase
@@ -174,8 +193,6 @@
                   font-weight: 400
                   margin-bottom: 0
                   padding-left: 0
-                  line-height: 1
-
               label[data-reactid=".hbspt-forms-0.1:$10.1:$is_client.0"] 
                 padding-left: 0
 
@@ -183,7 +200,7 @@
               select
                 width: 100%
                 color: map-get($colors, gray_olive)
-                font-size: 16px
+                font-size: .53rem
                 padding-left: 10px
                 border-radius: 8px
 
@@ -334,6 +351,20 @@
               background: transparent url('../../img/icons/chevron-right.png') center /100% no-repeat
           // .assign-now
         // .info
+
+        .form
+          .embed-frm
+            .hs-form
+              fieldset
+                input:not([type="radio"]), 
+                select
+                  font-size: 14px
+                  
+                // .input
+              // fieldset
+            // .hs-form
+          // .embed-form
+        // .form
       // .content
     // .container
   // #top
